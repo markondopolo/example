@@ -1,5 +1,5 @@
 CREATE TABLE movies (
-    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    id BIGSERIAL PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
     genre VARCHAR(100),
     duration INT,

@@ -5,6 +5,8 @@ import com.example.demo.domain.MovieService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 public class HelloController {
 
@@ -20,7 +22,7 @@ public class HelloController {
     }
 
     @GetMapping("/list/of/movies")
-    public Iterable<Movie> listMovies() {
-        return movieService.viewMovieList();
+    public Iterable<String> listMovies() {
+        return List.of("Hello", "World");
     }
 }
